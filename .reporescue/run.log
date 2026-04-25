@@ -1,0 +1,21 @@
+[gp_minimize/Branin] best f=0.8862 at x=[9.129618428079935, 2.507571364481614]
+[forest_minimize/Rosenbrock] best f=0.5749 at x=[0.5877729124015145, 0.2818362889442405]
+[skopt.space.Real] log-uniform 50 samples in [0.1,100], round-trip OK
+[convergence] best-so-far 20.031 -> 0.886
+[skopt.space] Integer/Categorical sampling OK
+USABLE
+[data] train=(1347, 64), test=(450, 64), classes=10
+[baseline] untuned 3-fold CV accuracy = 0.9733
+[BayesSearchCV] 15 iters in 6.7s
+[BayesSearchCV] best params: {'svc__C': 0.4400061132034216, 'svc__degree': 1, 'svc__gamma': 0.0023395578944107563, 'svc__kernel': 'linear'}
+[BayesSearchCV] best CV score: 0.9755
+[BayesSearchCV] held-out test accuracy: 0.9778
+[explore] kernels tried: {'rbf', 'linear', 'poly'}, distinct C values: 15
+SCENARIO_PASS
+/tmp/scikit-optimize-clean/lib/python3.13/site-packages/sklearn/gaussian_process/kernels.py:440: ConvergenceWarning: The optimal value found for dimension 0 of parameter k2__noise_level is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value.
+  warnings.warn(
+[probe1] reseeded gp_minimize reproducible: 1.0567 == 1.0567
+[probe2a] singleton Categorical accepted, all picks=='only'
+[probe3] forest.predict(return_std=True) -> std=[0.1684 0.1768 0.1806 0.5082 0.2375]
+[probe4] threaded Optimizer results: {1: np.float64(7.7827046481458035), 0: np.float64(7.7827046481458035)}
+NO_BUGS_FOUND

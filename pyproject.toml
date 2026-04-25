@@ -1,0 +1,11 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [
+    "setuptools",
+    "wheel",
+    "numpy>=2.4.3",
+    "scipy>=1.17.1",
+    "scikit-learn>=1.8.0",
+    "pyaml>=26.2.1",
+    "joblib>=1.5.3",
+]
